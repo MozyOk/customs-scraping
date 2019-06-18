@@ -11,15 +11,16 @@ if __name__ == "__main__":
 
   # page にアクセス
   driver.get('http://www.customs.go.jp/toukei/srch/index.htm?M=77&P=1,1,,,,1,,,,2,,2016,2019,,,7,853224000,,,,,,,,,,1,,,,,,,,,,,1,,,,,,,,,,,')
-  print(driver.title)
+
+  # ページのタイトル欲しいときはコメントアウトを外す
+  # print(driver.title)
 
   # frame を切り替える
   driver.switch_to_frame("FR_M_INFO")
 
   # page　のソースを表示する
-  # ソースの中に数値データは入っている
+  # ソースの中に数値データが入っている
   # print(driver.page_source)
-
 
   # テーブル要素を出力する
   tableElem = driver.find_element_by_class_name("value")
