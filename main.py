@@ -18,14 +18,11 @@ if __name__ == "__main__":
 
   # page　のソースを表示する
   # ソースの中に数値データは入っている
-  print(driver.page_source)
+  # print(driver.page_source)
 
 
-  # ここがうまくいかない。選択できていない?
-  tableElem = driver.find_elements_by_id("h2")
-  # trs = tableElem.find_element_by_class_name("table")
+  # テーブル要素を出力する
+  tableElem = driver.find_element_by_class_name("value")
+  print(tableElem.get_attribute('innerText'))
 
-  print(tableElem)
-
-  # driver.save_screenshot('seamrch_results.png')
   driver.quit()
