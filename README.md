@@ -4,7 +4,7 @@
 - chromedriver
 
 ## install 
-Mac なら `rew cask install chromedriver` とかでインストールできる。
+Mac なら `brew cask install chromedriver` とかでインストールできる。
 
 ## run
 `python3 main.py`
